@@ -1,0 +1,291 @@
+* {transition: none !important;}
+
+
+
+/* passcode input field */
+
+.passcode-container {
+	float: left;
+	margin-bottom: 16px;
+}
+
+.passcode-container.with-spacer {
+	margin-bottom: 16px;
+}
+
+.passcode-container .label {
+	width: 180px;
+	float: left;
+	margin-right: 10px;
+    padding: 8px 0 0;
+	display: inline-block;
+}
+
+.passcode-container .label.aligned {
+	display: block;
+	width: 100%;
+	margin-bottom: 12px;
+}
+
+.passcode-container .passcode-input {
+	float: left;
+	margin-bottom: 10px;
+}
+
+.passcode-container .passcode-input.valid:after {
+	content: ' ';
+	height: 20px;
+	width: 20px;
+	position: relative;
+	top: 5px;
+	left: 10px;
+	float: right;
+	display: inline-block;
+	background: url('https://resources.static.business.bt.com/CDE/Online/assets/images/global/icon_valid.png') no-repeat center center;
+}
+
+.passcode-container .passcode-input input[type='password'] {
+	outline: 0;
+	width: 30px;
+	height: 30px;
+	margin-bottom: 0;
+	font-weight: bold;
+	text-align: center;
+	display: inline-block;
+	border: 1px solid #ccc;
+}
+
+.passcode-container .passcode-input input[disabled], .passcode-container .passcode-input input.disabled {
+	color: #ccc;
+	background: #ccc;
+	box-shadow: none;
+    cursor: none !important;
+    pointer-events: none !important;
+}
+
+.passcode-container .passcode-input input[disabled]:focus, .passcode-container .passcode-input input.disabled:focus {
+	color: #ccc;
+	background: #ccc;
+	box-shadow: none;
+    cursor: none !important;
+    pointer-events: none !important;
+}
+
+.passcode-container .error {
+	clear: both;
+	padding: 0;
+	color: #eb352c;
+	display: none;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+.passcode-container .error a {
+	color: #eb352c;
+	text-decoration: underline;
+}
+
+.passcode-container .error-block {
+	width:100%;
+	float: left;
+	display: none;
+}
+
+.passcode-container .error-block a {
+	text-decoration: underline;
+}
+
+.passcode-container .error-block .error {
+	color: #eb352c;
+	display: block;
+}
+
+.passcode-container .error-block .error a {
+	color: #eb352c;
+	text-decoration: underline;
+}
+
+.passcode-container .link {
+	float: left;
+	width: 100%;
+	display: block;
+}
+
+.passcode-container .info {
+	z-index: 10;
+	color: #787878;
+	font-size: 14px;
+	position: absolute;
+	padding: 10px;
+	display: none;
+	border: 1px solid #ccc;
+}
+
+.passcode-container .info.bottom {
+	top: 125px;
+	width: 350px;
+	height: 90px !important;
+	background: #fff;
+}
+
+.passcode-container .info.bottom:before {
+	content: ' ';
+    height: 0;
+    width: 0;
+    display: inline-block;
+    position: absolute;
+    top: -20px;
+    border: solid 10px transparent;
+    border-bottom: solid 10px #ccc;
+}
+
+.passcode-container .info.right {
+	left: 490px;
+	width: 300px;
+	height: 120px;
+	background: url(https://resources.static.business.bt.com/CDE/Online/assets/img/plugins/LBI_tooltip/bg_tooltip_24.png) repeat-x scroll left -25px #EEE;
+}
+
+.passcode-container .info.right:before {
+	content: ' ';
+    height: 0;
+    width: 0;
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    left: -20px;
+    border: solid 10px transparent;
+    border-right: solid 10px #ccc;
+}
+
+.passcode-container .error.aligned {
+	margin-left: 171px;
+}
+
+.passcode-container .reset {
+	border: 0;
+	margin: 0;
+	outline: 0;
+	display: none;
+	color: #6400aa;
+	text-align: center;
+	font-size: 14px;
+	padding-top: 8px;
+	text-decoration: underline;
+	padding-left: 5px;
+	background: transparent;
+}
+
+.passcode-container .resetSecondary {
+	border: 0;
+	margin: 0;
+	outline: 0;
+	color: #6400aa;
+	text-align: center;
+	font-size: 14px;
+	padding-top: 8px;
+	text-decoration: underline;
+	padding-left: 5px;
+	background: transparent;
+}
+.passcode-container .info {height: 70px !important;}
+
+/* lightbox */
+
+.reveal-modal {
+	padding: 1rem .7rem !important;
+}
+
+.reveal-modal.pin-verification h1 {
+	padding-bottom: 20px;
+	margin-bottom: 23px;
+	border-bottom: solid 1px #cdcdcd;
+}
+
+.reveal-modal.pin-verification p a {
+	color: #6400aa;
+	text-decoration: underline;
+}
+
+.reveal-modal.pin-verification .passcode-container {
+	float: none;
+	margin: 0 auto;
+    display: block;
+    width: 340px;
+    margin-top: 1rem;
+}
+
+.reveal-modal.pin-verification .passcode-container .passcode-input input[type='password'] {
+	height: 50px;
+	margin-right: 7px;
+}
+
+.reveal-modal.pin-verification .passcode-container .passcode-input.valid:after {
+	top: 15px;
+}
+
+.reveal-modal.pin-verification .error {
+	font-style: normal;
+	background: transparent;
+}
+
+.reveal-modal.pin-verification .reset {
+	float: right;
+    position: relative;
+    left: 40px;
+    top: -55px;
+}
+.reveal-modal.pin-verification .resetSecondary {
+	float: right;
+    position: relative;
+    left: 40px;
+    top: -55px;
+}
+
+
+.reveal-modal.pin-verification .button {
+	margin-top: 30px;
+	min-width: 120px;
+	padding: 9px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.reveal-modal.pin-verification .button.primary {
+	float: right;
+	background: #6400aa;
+}
+
+.reveal-modal.pin-verification .button.primary:hover, .reveal-modal.pin-verification .button.primary:focus {
+	background: #531783;
+}
+
+.reveal-modal.pin-verification .button.secondary {
+	float: left;
+	color: #666666;
+	border: solid 1px #cccccc;
+	background: transparent;
+}
+
+.reveal-modal.pin-verification .button.secondary:hover, .reveal-modal.pin-verification .button.secondary:focus {
+	background: #f9f9f9;
+}
+
+.reveal-modal.pin-verification .button.primary.disabled, .reveal-modal.pin-verification .button.secondary.disabled {
+	color: #fff;
+	background: #c2c2c2;
+}
+
+
+
+/* tooltips */
+
+.icon-question + .tooltip {
+	top: 30px;
+	left: 120px;
+}
+
+.icon-question:hover + .tooltip {
+	display: block;
+}

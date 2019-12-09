@@ -1,0 +1,162 @@
+@font-face{font-family:"BTFont Rg";font-weight:normal;src:url("https://secure.business.bt.com/Content/GroupsAndPermissions/assets/fonts/newbt-webfont.woff") format("woff")}
+@font-face{font-family:"BTFont Bd";font-weight:normal;src:url("https://secure.business.bt.com/Content/GroupsAndPermissions/assets/fonts/newbtbd-webfont.woff") format("woff")}
+.bt-header{font-family:"BTFont Rg",Calibri,sans-serif}
+.bt-content{max-width:1200px;width:100%;padding:0 15px;position:relative;margin:0 auto}
+@media(min-width:768px){.bt-content{padding:0 20px}
+}
+.bt-header a{text-decoration:none;color:#333}
+.bt-header a.small{font-size:14px}
+.bt-header .button{display:block;padding:0 20px;height:40px;line-height:40px;border-radius:5px;border:1px solid transparent;margin:0 10px 0 0;font-size:1rem;text-decoration:none;cursor:pointer;min-width:120px}
+.bt-header input{border:1px solid #666;background:white;color:#666;height:40px;border-radius:5px;padding:0 20px 0 10px;width:100%}
+.bt-header input[type="search"]::-webkit-search-cancel-button{-webkit-appearance:none}
+.bt-header input[type="search"]::-webkit-input-placeholder{color:rgba(102,102,102,.5)}
+.global-notification{display:none;background:rgba(51,51,51,0.8);position:absolute;left:0;right:0;z-index:2}
+.global-notification .notification{display:flex;min-height:40px;align-items:center}
+.global-notification .notification-channel{font-family:"BTFont Rg",Calibri,sans-serif}
+.global-notification .notification-text{flex-grow:1;font-size:14px}
+.global-notification .notification-text p{color:white}
+.global-notification .notification-icon{height:40px;display:flex;align-items:center;cursor:pointer}
+.global-nav-mobile{z-index:10;overflow:hidden;position:absolute;display:none;top:60px;left:0;right:0;background:#6400aa}
+.global-nav-mobile .channel-selector-mobile{background:#fff;padding:15px}
+.global-nav-mobile .channel-selector-mobile .channel-selector{min-height:72px;display:flex;align-items:center;border:1px solid #eee;border-radius:5px;padding:0 15px;cursor:pointer}
+.global-nav-mobile .channel-selector-mobile .channel-selector-text{position:relative;width:100%;padding:15px 0;display:flex;align-items:center}
+.global-nav-mobile .channel-selector-mobile .channel-selector-text p{flex-grow:1;font-size:14px}
+.global-nav-mobile .channel-selector-mobile .channel-selector-text spanÃ‚ {font-size:Ã‚ 16px}
+.global-nav-mobile .channel-selector-mobile .channel-selector-text:after{margin-left:15px;content:url("https://btbsecure.business.bt.com/CommonContent/img/icons/arrow-down-grey.svg")}
+.global-nav-mobile .channel-selector-mobile .mobile-channels{display:none;width:100%}
+.global-nav-mobile .channel-selector-mobile .mobile-channels .channel{font-size:14px;height:50px;display:flex;align-items:center;border-bottom:1px solid #eee;position:relative}
+.global-nav-mobile .channel-selector-mobile .mobile-channels .channel:last-of-type{border-bottom:0}
+.global-nav-mobile .channel-selector-mobile .mobile-channels .channel:after{content:url("https://btbsecure.business.bt.com/CommonContent/img/icons/arrow-right-grey.svg");position:absolute;right:0}
+.global-nav-mobile .nav-accordion-title{display:flex;align-items:center;cursor:pointer}
+.global-nav-mobile .nav-accordion-title .title{flex-grow:1;font-size:1rem}
+.global-nav-mobile .nav-accordion-title:after{content:url("https://btbsecure.business.bt.com/CommonContent/img/icons/arrow-down-white.svg")}
+.global-nav-mobile .nav-accordion.nav-open .nav-accordion-title{border-bottom:0}
+.global-nav-mobile .nav-accordion.nav-open .nav-accordion-title:after{content:url("https://btbsecure.business.bt.com/CommonContent/img/icons/arrow-up-white.svg")}
+.global-nav-mobile .nav-accordion-content{background:#fff;display:none;padding:0 15px;float:none}
+.global-nav-mobile .nav-accordion-content .heading-link{display:flex;align-items:center;height:50px;border-bottom:1px solid #eee;color:#333}
+.global-nav-mobile .nav-accordion-content .heading-link .link{flex-grow:1;font-size:14px}
+.global-nav-mobile .nav-accordion-content .category{display:flex;align-items:center;height:50px;border-bottom:1px solid #eee;cursor:pointer}
+.global-nav-mobile .nav-accordion-content .category .title{flex-grow:1;font-size:14px;color:#333}
+.global-nav-mobile .nav-accordion-content .category:after{content:url("https://btbsecure.business.bt.com/CommonContent/img/icons/arrow-down-grey.svg")}
+.global-nav-mobile .nav-accordion-content .category.nav-open:after{content:url("https://btbsecure.business.bt.com/CommonContent/img/icons/arrow-up-grey.svg")}
+.global-nav-mobile .nav-accordion-content .category.no-links:after{display:none}
+.global-nav-mobile .nav-accordion-content .sub-categories{display:none;align-items:center;margin:0 0 0 30px}
+.global-nav-mobile .nav-accordion-content .sub-categories .sub-category{font-size:14px;display:flex;align-items:center;height:50px;border-bottom:1px solid #eee;color:#333}
+.global-nav-mobile .nav-link-mobile{display:flex;align-items:center;height:50px;margin:0 15px;font-size:14px;color:#fff;text-decoration:none;border-bottom:1px solid rgba(255,255,255,0.4)}
+.global-nav-mobile .nav-link-mobile:last-of-type{border-bottom:0}
+.global-nav-mobile .my-account{background:white;padding:15px}
+.global-nav-mobile .my-account .button{font-size:14px;background:#333;color:white;width:100%;text-align:center}
+@media(min-width:960px){.global-nav-mobile{display:none !important}
+}
+.bt-header .nav{font-weight:300;display:flex}
+.bt-header .header-content{display:flex;align-items:center}
+.bt-header .header-top-nav{display:none}
+.bt-header .header-menu-buttons{display:flex;align-items:center;cursor:pointer}
+.bt-header .header-menu-buttons .close{display:none}
+.bt-header .nav{font-weight:300;display:flex}
+.bt-header .header-content{display:flex;align-items:center}
+.bt-header .header-top-nav{display:none}
+.bt-header .header-menu-buttons{display:flex;align-items:center;cursor:pointer}
+.bt-header .header-menu-buttons .close{display:none}
+.bt-header .header-main{background:#6400aa}
+.bt-header .header-main-container{display:flex;align-items:center;height:60px;position:relative}
+.bt-header .header-main-container .header-logo{height:46px;width:auto;display:flex;align-items:center;flex-grow:1;margin-right:30px}
+.bt-header .header-main-container .header-logo .logo{height:46px}
+.bt-header .header-main-container .channel-selector-desktop{display:none}
+.bt-header .header-main-container .global-nav{display:none}
+.bt-header .header-main-container .header-icons{margin-right:15px;align-items:center;display:flex;cursor:pointer;flex-grow:0}
+.bt-header .header-main-container .header-icons .basket{position:relative}
+.bt-headerÃ‚ .header-icons img.icon{max-width:Ã‚ none}
+.bt-header .header-main-container .header-icons .basket.alert:after{content:'Ã¢â‚¬Â¢';bottom:-12px;left:7px;color:#00a0d6;position:absolute;font-size:15px}
+.bt-header .header-main-container .header-icons .basket.corporate,.bt-header .header-main-container .header-icons .basket.large-corporate,.bt-header .header-main-container .header-icons .basket.public-sector{display:none}
+.bt-header .header-main-container .header-icons .search{display:flex;align-items:center;flex-direction:row-reverse;width:100%}
+.bt-header .header-main-container .header-icons .search-input{font-size:1rem;color:#666}
+.bt-header .header-main-container .header-icons .search-bar{width:0;overflow:hidden;position:relative}
+.bt-header .header-main-container .header-icons .search-bar-close{position:absolute;right:20px;top:12px}
+.bt-header .header-main-container .header-icons .search-icon{background:transparent;margin-left:15px}
+.bt-header .header-main-container.nav-open .header-icons{display:flex;align-items:center}
+.bt-header .header-main-container .account{display:none}
+.bt-header.search-open .header-main-container .search-bar{width:100%;transition:all .2s}
+.bt-header.search-open .header-logo{flex-grow:0}
+.bt-header.search-open .header-content{display:none}
+.bt-header.search-open .header-icons{flex-grow:1}
+.bt-header.search-open .header-icons .basket{display:none}
+.bt-header .meganav{display:none}
+@media(min-width:960px){.bt-header .header-top-nav{display:block;background:#ddd;min-height:40px}
+.bt-header .header-top-nav .nav-link{line-height:40px;height:40px;color:#333;margin-right:30px;text-decoration:none}
+.bt-header .header-top-nav .nav-link:hover{text-decoration:underline}
+.bt-header .header-top-nav .nav-link:active{font-family:"BTFont Bd",Calibri,sans-serif;}
+.bt-header .header-top-nav-content{display:flex}
+.bt-header .header-main-container{height:80px}
+.bt-header .header-main-container .header-logo{flex-grow:0;height:46px}
+.bt-header .header-main-container .header-logo .logo{height:46px}
+.bt-header .header-main-container .header-icons{margin-right:25px}
+.bt-header .header-main-container .header-icons .search-bar .search-input{font-size:18px}
+.bt-header .header-main-container .header-icons .search-icon{margin-left:25px}
+.bt-header .header-main-container .global-nav{flex-grow:1;display:flex}
+.bt-header .header-main-container .global-nav .nav-link{font-size:18px;height:40px;display:flex;display:-ms-inline-flexbox;align-items:center;color:#fff;margin:20px 15px;text-align:center;text-decoration:none;border-bottom:1px solid transparent}
+.bt-header .header-main-container .global-nav .nav-link:hover{border-bottom:1px solid #fff}
+.bt-header .header-main-container .channel-selector-desktop{display:flex;align-items:center;padding-right:30px;color:#fff;padding:0 30px;margin-right:25px;border-right:1px solid rgba(255,255,255,0.5)}
+.bt-header .header-main-container .channel-selector-desktop .channel-selector{height:50px;display:flex;flex-direction:column;position:relative;padding:5px 0 0 0}
+.bt-header .header-main-container .channel-selector-desktop .channel-selector-label{font-size:14px;color:rgba(255,255,255,0.75)}
+.bt-header .header-main-container .channel-selector-desktop .channel-selector .channel-selected{font-size:18px;line-height:24px}
+.bt-header .header-main-container .channel-selector-desktop .channel-selector .channels{display:none;position:absolute;background:#fff;padding:0 20px;top:-38px;right:-31px;z-index:10;width:290px;border-radius:5px}
+.bt-header .header-main-container .channel-selector-desktop .channel-selector .channels .channel{border-bottom:1px solid #ddd;display:flex;align-items:center;font-size:1.125rem}
+.bt-header .header-main-container .channel-selector-desktop .channel-selector .channels .channel-link{height:40px;text-decoration:none;line-height:40px;font-size:14px;margin-bottom:-1px;cursor:pointer}
+.bt-header .header-main-container .channel-selector-desktop .channel-selector .channels .channel:after{position:absolute;right:20px;content:url("https://btbsecure.business.bt.com/CommonContent/img/icons/arrow-right-grey.svg")}
+.bt-header .header-main-container .channel-selector-desktop .channel-selector .channels .channel:last-child{border-bottom:1px solid transparent}
+.bt-header .header-main-container .channel-selector-desktop .channel-selector .channels .channel:hover .channel-link{color:#6400aa;border-bottom:1px solid #6400aa}
+.bt-header .header-main-container .channel-selector-desktop .channel-selector .label{color:#fff;margin:5px 0 0 0}
+.bt-header .header-main-container .channel-selector-desktop .channel-selector:hover .channels{display:block}
+.bt-header .header-main-container .channel-selector-desktop .channel-selected{margin:0;display:flex;align-items:center;color:white}
+.bt-header .header-main-container .channel-selector-desktop .channel-selected:after{content:url("https://btbsecure.business.bt.com/CommonContent/img/icons/arrow-down-white.svg");padding-left:15px;font-size:10px}
+.bt-header .header-main-container .account{height:80px;padding:0 20px;font-size:1.125rem;text-decoration:none;color:#fff;display:block}
+.bt-header .header-main-container .account-text{height:40px;margin:20px 0;display:flex;align-items:center;border-bottom:1px solid transparent}
+.bt-header .header-main-container .account:hover .account-text{border-bottom:1px solid white}
+.bt-header .meganav{height:0;overflow:hidden;padding:10px 0 40px;background:#eee;transition:all .3s}
+.bt-header .meganav-heading{border-bottom:1px solid #ddd;height:40px}
+.bt-header .meganav-heading a{height:40px;margin:0;margin-bottom:-1px;color:#333}
+.bt-header .meganav-heading:hover a{color:#6400aa;border-bottom:1px solid #6400aa}
+.bt-header .meganav-link{font-size:16px;min-height:30px;text-decoration:none;display:inline-flex;align-items:center;margin:5px 0;border-bottom:1px solid transparent}
+a.meganav-link.heading:after{content: '›';margin-left: 10px;}
+.bt-header .meganav-link-container .meganav-link{font-size:14px;line-height:1.125rem}
+.bt-header .meganav-link:hover{color:#6400aa;border-bottom:1px solid #6400aa}
+.bt-header .meganav-link.heading{font-family:"BTFont Bd",Calibri,sans-serif;}
+.bt-header .meganav-link.heading-no-link{font-family:"bt-regular",Calibri,sans-serif;font-weight:bold;color:#333;font-size:1rem}
+.bt-header .meganav-link.heading-no-link:hover{border-bottom:1px solid transparent}
+.bt-header .meganav-container{display:flex}
+.bt-header .meganav-column{width:200px;margin-right:30px}
+.bt-header .meganav-column:last-of-type{margin-right:0}
+.bt-header .meganav.open,.bt-header .meganav:hover{display:block;height:auto;position:absolute;left:0;right:0;z-index:3;transition:all .3s}
+.bt-header .header-dropdown-button{height:80px;margin:-15px 0}
+.bt-header .header-menu-buttons{display:none}
+.bt-header .header-content{flex-grow:1}
+.bt-header .header-top-nav .nav-link.selected{font-family:"BTFont Bd",Calibri,sans-serif;}
+}
+
+
+
+/*****************************/
+/* CUSTOM STYLES - VERSION 2 */
+/*****************************/
+
+
+/* FIXES */
+
+.global-nav-mobile .nav-accordion.nav-open .nav-accordion-title:after{width:10px;height:21px;display:inline-block;}
+.global-nav-mobile .nav-accordion-content .category.nav-open:after{width:10px;height:21px;display:inline-block;}
+.global-nav-mobile .nav-accordion-title:after{width:10px;height:21px;display:inline-block;}
+.global-nav-mobile .nav-accordion-content .category:after{width:10px;height:21px;display:inline-block;}
+
+
+/* OVERRIDES FOR CLASHES..... */
+
+.bt-header .label {text-align:left;line-height:1rem;padding:0;font-size:1rem;background-color:transparent;}
+
+
+/* CUSTOM FIXES */
+
+.C001-masthead .content-wrap.flush--ends.masthead .row.hide-for-small-only {display: none !important;}
+.C001-masthead .content-wrap.flush--ends.masthead .row .columns.small-12.bannersearch.push--bottom {display: none !important;}
+.C001-masthead {border-bottom:0; background:#6400AA;}
+@media (min-width: 960px) {.C001-masthead {background:linear-gradient(#DDDDDD 40px, #6400AA 0);}}
